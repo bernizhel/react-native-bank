@@ -1,0 +1,17 @@
+{{#if connector}}
+  export {
+  {{pascalCase name}}Connector } from './{{dashCase name}}-connector';
+{{else if ui}}
+  export {
+  {{pascalCase name}}
+  } from './views'; export {
+  {{pascalCase name}}Connector } from './connectors';
+{{else if main}}
+  export {
+  {{pascalCase name}},
+  {{pascalCase name}}Connector } from './ui';
+{{else}}
+  export {
+  {{pascalCase name}}
+  } from './{{dashCase name}}';
+{{/if}}

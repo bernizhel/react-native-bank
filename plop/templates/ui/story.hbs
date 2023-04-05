@@ -1,0 +1,24 @@
+import type { T{{pascalCase name}}Props } from './{{dashCase name}}';
+
+import { storiesOf } from '@storybook/react-native';
+import { Dimensions } from 'react-native';
+import { styled } from '@theme';
+import { {{pascalCase name}} } from './{{dashCase name}}';
+
+const Container = styled.View`
+  padding: ${({ theme }) => theme.spacing(20)}px
+    ${({ theme }) => theme.spacing(4)}px;
+  width: ${() => Dimensions.get('window').width}px;
+  height: ${() => Dimensions.get('window').height}px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const data: T{{pascalCase name}}Props = {};
+
+storiesOf('ui/{{type}}', module).add('{{pascalCase name}}', () => (
+  <Container>
+    <{{pascalCase name}} {...data} />
+  </Container>
+));
