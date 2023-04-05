@@ -1,0 +1,4 @@
+export
+{{#if import}} {{{import}}} {{else}} {} {{/if}}
+from
+{{#if path}} {{path}} {{else if import}} './{{modelName}}' {{else}} '' {{/if}};

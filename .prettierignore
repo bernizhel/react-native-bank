@@ -1,0 +1,9 @@
+.expo
+assets
+build
+node_modules
+plop/templates
+yarn.lock
+.prettierignore
+.gitignore
+/storybook/storyLoader.js

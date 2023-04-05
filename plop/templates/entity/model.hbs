@@ -1,0 +1,19 @@
+import { createStore, createEvent } from 'effector';
+import { useStore } from 'effector-react';
+
+const add = createEvent<number>()
+
+const $counter = createStore<number>(0)
+    .on(add, (state, payload) => state + payload);
+
+const useCounter = () => useStore($counter);
+
+export const events = {
+    add,
+};
+
+export const effects = {};
+
+export const selectors = {
+    useCounter,
+};

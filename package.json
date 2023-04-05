@@ -1,0 +1,104 @@
+{
+  "name": "react-native-bank",
+  "version": "0.0.1",
+  "description": "React Native on Expo bank client",
+  "keywords": [
+    "typescript",
+    "expo",
+    "react native",
+    "react navigation",
+    "effector",
+    "axios",
+    "react-query",
+    "styled-components",
+    "storybook",
+    "jest",
+    "cypress",
+    "plop",
+    "conventional commits"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "bernizhel",
+    "email": "detrop.1995@yandex.ru"
+  },
+  "repository": "https://github.com/bernizhel/react-native-bank",
+  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "prettier": "prettier \"./**/*\" -w -u --loglevel=\"silent\" --config=\"./.prettierrc\" --ignore-path=\"./.prettierignore\"",
+    "start": "pnpm prettier && rnstl && expo start",
+    "start:android": "pnpm prettier && rnstl && expo start --android",
+    "start:ios": "pnpm prettier && rnstl && expo start --ios",
+    "start:web": "pnpm prettier && rnstl && expo start --web",
+    "storybook:start": "pnpm prettier && rnstl && cross-env IS_STORYBOOK=true expo start",
+    "storybook:build": "rnstl && build-storybook",
+    "test:unit": "pnpm prettier && jest --watchAll --verbose",
+    "test:coverage": "pnpm prettier && jest --verbose --coverage",
+    "test:e2e": "pnpm prettier && cypress open",
+    "new": "plop",
+    "eject": "expo eject",
+    "commit": "cz"
+  },
+  "dependencies": {
+    "@react-navigation/bottom-tabs": "6.0.9",
+    "@react-navigation/native": "6.0.6",
+    "@react-navigation/native-stack": "6.2.5",
+    "axios": "0.25.0",
+    "effector": "22.1.2",
+    "effector-react": "22.0.6",
+    "expo": "44.0.5",
+    "expo-app-loading": "1.3.0",
+    "expo-font": "10.0.4",
+    "expo-navigation-bar": "^1.1.2",
+    "expo-system-ui": "^1.1.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-native": "0.64.3",
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-screens": "3.10.1",
+    "react-native-storybook-loader": "2.0.5",
+    "react-native-svg": "12.1.1",
+    "react-native-web": "0.17.5",
+    "react-query": "3.34.12",
+    "styled-components": "5.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "7.16.12",
+    "@storybook/addon-actions": "6.4.15",
+    "@storybook/addon-controls": "6.4.15",
+    "@storybook/addon-links": "6.4.15",
+    "@storybook/react-native": "5.3.25",
+    "@testing-library/react-native": "9.0.0",
+    "@types/jest": "27.4.0",
+    "@types/prettier": "2.4.2",
+    "@types/react": "17.0.38",
+    "@types/react-native": "0.64.13",
+    "@types/styled-components": "5.1.21",
+    "@types/styled-components-react-native": "5.1.3",
+    "babel-loader": "8.2.3",
+    "cross-env": "7.0.3",
+    "cypress": "9.3.1",
+    "cypress-image-snapshot": "4.0.1",
+    "cz-conventional-changelog": "3.3.0",
+    "jest": "27.4.7",
+    "plop": "3.0.5",
+    "prettier": "2.4.1",
+    "typescript": "4.5.5"
+  },
+  "config": {
+    "expo": {
+      "sdkVersion": "44.0.0"
+    },
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./src"
+      ],
+      "pattern": "**/*.story.tsx",
+      "outputFile": "./storybook/storyLoader.js"
+    },
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

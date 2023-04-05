@@ -1,0 +1,48 @@
+{
+  "category": [
+    {
+      "category_id": "1",
+      "category_name": "Тест Мобильная связь",
+      "category_icon": "",
+      "services": [
+        {
+          "service_id": "11",
+          "service_name": "МТС",
+          "service_icon": ""
+        },
+        {
+          "service_id": "12",
+          "service_name": "МегаФон",
+          "service_icon": ""
+        },
+        {
+          "service_id": "13",
+          "service_name": "Beeline",
+          "service_icon": ""
+        },
+        {
+          "service_id": "14",
+          "service_name": "Tele2",
+          "service_icon": ""
+        },
+        {
+          "service_id": "15",
+          "service_name": "Mobile",
+          "service_icon": ""
+        }
+      ]
+    },
+    {
+      "category_id": "2",
+      "category_name": "Тест ЖКХ",
+      "category_icon": "",
+      "services": []
+    },
+    {
+      "category_id": "3",
+      "category_name": "Тест Интернет",
+      "category_icon": "",
+      "services": []
+    }
+  ]
+}

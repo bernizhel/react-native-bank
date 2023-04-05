@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "sdkVersion": "44.0.0",
+    "name": "react-native-bank",
+    "description": "React Native bank client application",
+    "slug": "react-native-bank",
+    "owner": "bernizhel",
+    "privacy": "hidden",
+    "version": "0.0.1",
+    "githubUrl": "https://github.com/bernizhel/react-native-bank",
+    "platforms": ["ios", "android"],
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#312C39",
+    "primaryColor": "#6C78E6",
+    "assetBundlePatterns": ["**/*"],
+    "updates": {
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 100
+    },
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#312C39"
+    },
+    "notification": {
+      "icon": "./assets/images/notification.png",
+      "color": "#6C78E6",
+      "androidMode": "collapse",
+      "androidCollapsedTitle": "${unread_notifications} New Notifications"
+    },
+    "androidStatusBar": {
+      "barStyle": "dark-content",
+      "backgroundColor": "#6C78E6",
+      "translucent": true
+    },
+    "androidNavigationBar": {
+      "barStyle": "dark-content"
+    },
+    "developmentClient": {
+      "silentLaunch": true
+    },
+    "ios": {
+      "userInterfaceStyle": "dark",
+      "supportsTablet": true
+    },
+    "android": {
+      "userInterfaceStyle": "dark",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#352F3D"
+      },
+      "permissions": ["VIBRATE"],
+      "allowBackup": false
+    }
+  }
+}
